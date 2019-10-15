@@ -90,6 +90,7 @@ export class Spectral {
           mergeKeys: true,
         }),
         getLocationForJsonPath: getLocationForJsonPathYAML,
+        source: opts.resolve && opts.resolve.documentUri,
       };
     } else {
       parsedResult = target;
